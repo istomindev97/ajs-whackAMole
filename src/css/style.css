@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .welcome {
+    margin-top: 20px;
+  }
+  
+  .score {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .start {
+    margin: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background-color: #218838;
+  }
+  
+  #game {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    margin: 20px;
+  }
+  
+  .hole {
+    width: 100px;
+    height: 100px;
+    background-color: #8B4513;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .mole {
+    width: 60px;
+    height: 60px;
+    background-image: url('https://github.com/netology-code/ahj-homeworks/blob/AHJ-50/dom/pic/goblin.png?raw=true');
+    background-size: cover;
+    position: absolute;
+    bottom: -60px; 
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 0.3s ease; 
+  }
+  
